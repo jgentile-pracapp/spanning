@@ -158,3 +158,13 @@ Running handlers:
 Running handlers complete
 Chef Client finished, 4/99 resources updated in 08 seconds
 SJC-MBP-18-3570:spanning root#
+
+
+SJC-MBP-18-3570:spanning root# cat destruction.txt; echo -en "\n\n\n"; cat resurrection.txt
+knife node run_list remove node1 recipe:mycookbook
+knife node run_list remove node2 recipe:mycookbook
+
+
+
+resurrecting [node1, node2]
+SJC-MBP-18-3570:spanning root#
