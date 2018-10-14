@@ -14,7 +14,7 @@ end
 # Empty array to retain murdered nodes outside of ruby_block
 removed_nodes = []
 
-# Find
+# Find sibling nodes and remove "this" recipe from their runlist
 ruby_block 'murder_my_friends' do
     block do
         # mocking return of a `knife search node chef_env:${this_environment} and recipe:mycookbook`
