@@ -2,6 +2,7 @@
 
 TODO: Enter the cookbook description here.
 
+```
 SJC-MBP-18-3570:spanning root# chef-solo -c solo.rb -o spanningtest
 Starting Chef Client, version 14.3.37
 [2018-10-14T15:11:50-07:00] WARN: Run List override has been provided.
@@ -168,3 +169,4 @@ knife node run_list remove node2 recipe:mycookbook
 
 resurrecting [node1, node2]
 SJC-MBP-18-3570:spanning root#
+```
